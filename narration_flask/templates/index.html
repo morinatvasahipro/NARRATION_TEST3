@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ナレーション原稿作成アプリ</title>
+</head>
+<body>
+    <h1>ナレーション原稿作成アプリ</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <label for="input_file">1. テキストファイルを選択(.txt):</label><br>
+        <input type="file" id="input_file" name="input_file" accept=".txt"><br><br>
+        <label for="output_file">2. ファイル名(.docx)を指定:</label><br>
+        <input type="text" id="output_file" name="output_file" placeholder="Enter output filename"><br><br>
+        <input type="submit" value="3. Wordファイルを生成">
+    </form>
+</body>
+</html>
